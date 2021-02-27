@@ -3,12 +3,8 @@ import {Store} from './store';
 export const Mediaworld: Store = {
   currency: '€',
   labels: {
-    captcha: {
-      container: 'body',
-      text: ['Too Many Requests.'],
-    },
     inStock: {
-      container: '.price-container',
+      container: '.product-add-to-cart',
       text: ['Aggiungi al carrello'],
     },
   },
