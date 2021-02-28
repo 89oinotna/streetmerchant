@@ -19,8 +19,9 @@ export const Unieuro: Store = {
       brand: 'sony',
       model: 'ps5 console',
       series: 'sonyps5c',
-      pid: 'SONPS5DISC',
-      url:'https://www.unieuro.it/online/Playstation-5/PlayStation-5-pidSONPS5DISC',
+      pid:'SAMT500',
+      //pid: 'SONPS5DISC',
+      url:'https://www.unieuro.it/online/Playstation-5/PlayStation-5-pidSAMT500',
     },
     {
       brand: 'sony',
