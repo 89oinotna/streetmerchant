@@ -61,6 +61,7 @@ async function main() {
   await stop();
   browser = await launch({
     args,
+    executablePath: 'chromium-browser',
     defaultViewport: {
       height: config.page.height,
       width: config.page.width,
