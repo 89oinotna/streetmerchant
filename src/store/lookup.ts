@@ -315,7 +315,7 @@ async function lookupCard(
     logger.info(`${Print.inStock(link, store, true)}\n${givenUrl}`);
 
     const spawn = require("child_process").spawn;
-    const pythonProcess = spawn('C:/Users/Simone/Documents/autorder/venv/Scripts/python.exe',["C:/Users/Simone/Documents/autorder/autorder.py", link.pid, store.baseCartAdd, store.formKey]);
+    const pythonProcess = spawn('C:/Users/Simone/Documents/autorder/venv/Scripts/python.exe',["C:/Users/Simone/Documents/autorder/autorder.py", link.pid, store.name]);
     pythonProcess.stdout.on('data', (data: { toString: () => any; }) => {
       logger.info(data);
     });
