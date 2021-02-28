@@ -19,9 +19,10 @@ export const Unieuro: Store = {
       brand: 'sony',
       model: 'ps5 console',
       series: 'sonyps5c',
-      pid:'SAMT500',
+      pid:'AEAABSCAPPROW',
       //pid: 'SONPS5DISC',
-      url:'https://www.unieuro.it/online/Playstation-5/PlayStation-5-pidSAMT500',
+      url:'https://www.unieuro.it/online/Cuffie-e-Auricolari/Stone-C30-pidAEAABSCAPPROW'
+      //url:'https://www.unieuro.it/online/Playstation-5/PlayStation-5-pidSONPS5DISC',
     },
     {
       brand: 'sony',
