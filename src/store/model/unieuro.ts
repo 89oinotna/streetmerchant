@@ -20,8 +20,7 @@ export const Unieuro: Store = {
       model: 'ps5 console',
       series: 'sonyps5c',
       pid: 'SONPS5DISC',
-      url:'https://www.unieuro.it/online/Activity-tracker/Mi-Smart-Band-5-pidXIABAND5',
-        //'https://www.unieuro.it/online/Playstation-5/PlayStation-5-pidSONPS5DISC',
+      url:'https://www.unieuro.it/online/Playstation-5/PlayStation-5-pidSONPS5DISC',
     },
     {
       brand: 'sony',
