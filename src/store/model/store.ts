@@ -184,6 +184,7 @@ export type Link = {
   series: Series;
   screenshot?: string;
   url: string;
+  pid?:string;
 };
 
 export type LabelQuery = Element[] | Element | string[];
@@ -238,4 +239,6 @@ export type Store = {
   proxyList?: string[];
   currentProxyIndex?: number;
   captchaDeterrent?: CaptchaDeterrent;
+  baseCartAdd?: string;
+  formKey?: string;
 };

@@ -24,6 +24,7 @@ import open from 'open';
 import {processBackoffDelay} from './model/helpers/backoff';
 import {sendNotification} from '../notification';
 import useProxy from '@doridian/puppeteer-page-proxy';
+import { Console } from 'console';
 
 const inStock: Record<string, boolean> = {};
 
@@ -313,11 +314,16 @@ async function lookupCard(
       link.cartUrl && config.store.autoAddToCart ? link.cartUrl : link.url;
     logger.info(`${Print.inStock(link, store, true)}\n${givenUrl}`);
 
-    if (config.browser.open) {
+    const spawn = require("child_process").spawn;
+    const pythonProcess = spawn('C:/Users/Simone/Documents/autorder/venv/Scripts/python.exe',["C:/Users/Simone/Documents/autorder/autorder.py", link.pid, store.baseCartAdd, store.formKey]);
+    pythonProcess.stdout.on('data', (data: { toString: () => any; }) => {
+      logger.info(data);
+    });
+    /*if (config.browser.open) {
       await (link.openCartAction === undefined
         ? open(givenUrl)
         : link.openCartAction(browser));
-    }
+    }*/
 
     sendNotification(link, store);
 
